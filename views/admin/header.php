@@ -110,7 +110,7 @@ if (file_exists($path)) {
             <div class="brand-logo">
                 <a href="index.php?page_layout=index">
                     <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-                    <h5 class="logo-text">Dashtreme Admin</h5>
+                    <h5 class="logo-text">Admin</h5>
                 </a>
             </div>
             <ul class="sidebar-menu do-nicescrol">
