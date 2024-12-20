@@ -18,8 +18,16 @@ if (isset($_POST['soluongnhapthem'])) {
     $mahdn = mysqli_fetch_array(mysqli_query($conn, "SELECT `MaHoaDonNhap` FROM `hoadonnhap` WHERE MaNCC = " . $_POST['NCC'] . " AND UserName = '" . $_SESSION['username'] . "' AND NgayNhapHang = '" .   date('Y/m/d H:i:s') . "'"))['MaHoaDonNhap'];
     $sqlinsertcthdn = "INSERT INTO `chitiethoadonnhap`(`MaHoaDonNhap`, `MaNL`, `SoLuongNhap`, `TongTien`) VALUES ('" . $mahdn . "','" . $id . "','" . $_POST['soluongnhapthem'] . "','" . $_POST['soluongnhapthem'] * $row['DonGiaNhap'] . "')";
     $queryinsertcthdn  = mysqli_query($conn, $sqlinsertcthdn);
-    $sqlupdatesl = "UPDATE `nguyenlieu` SET `SoLuongCon`= SoLuongCon + " . $_POST['soluongnhapthem'] . " WHERE MaNL = " . $id . "";
-    $queryupdatesl = mysqli_query($conn, $sqlupdatesl);
+    if (isset($_POST['soluongnhapthem']) && is_numeric($_POST['soluongnhapthem']) && $_POST['soluongnhapthem'] > 0) {
+        $soluongnhap = (int)$_POST['soluongnhapthem']; 
+        $sqlupdatesl = "UPDATE `nguyenlieu` SET `SoLuongCon` = SoLuongCon + $soluongnhap WHERE MaNL = " . $id . "";
+        $queryupdatesl = mysqli_query($conn, $sqlupdatesl);
+        if ($queryupdatesl) {
+            echo "Cập nhật số lượng thành công!";
+        } else {
+            echo "Lỗi cập nhật số lượng!";
+        }
+    }
     header("location: quanLyNguyenLieu.php");
 }
 

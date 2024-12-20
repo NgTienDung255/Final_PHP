@@ -1,5 +1,5 @@
 <?php
-include("../BTLWEB/models/ketnoi.php");
+include("models/ketnoi.php");
 $thongbao = '';
 if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["retypepassword"])) {
     $username = $_POST["username"];

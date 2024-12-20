@@ -79,7 +79,7 @@ if (file_exists($path)) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
+    <title>Quản lý nhà hàng</title>
     <!-- loader-->
     <link href="../assets/css/pace.min.css" rel="stylesheet" />
     <script src="../assets/js/pace.min.js"></script>
@@ -140,11 +140,11 @@ if (file_exists($path)) {
                         <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý nhập hàng</span>
                     </a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="index.php?page_layout=congThucMon">
                         <i class="zmdi zmdi-view-dashboard"></i> <span>Công thức món</span>
                     </a>
-                </li>
+                </li>-->
                 <li>
                     <a href="index.php?page_layout=giamGia">
                         <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý giảm giá</span>
@@ -171,15 +171,15 @@ if (file_exists($path)) {
                             <i class="icon-menu menu-icon"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <form class="search-bar">
                             <input type="text" class="form-control" placeholder="Enter keywords">
                             <a href="javascript:void();"><i class="icon-magnifier"></i></a>
                         </form>
-                    </li>
+                    </li>-->
                 </ul>
 
-                <ul class="navbar-nav align-items-center right-nav-link">
+                <!--<ul class="navbar-nav align-items-center right-nav-link">
                     <li class="nav-item dropdown-lg">
                         <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
                             <i class="fa fa-envelope-open-o"></i></a>
@@ -195,7 +195,7 @@ if (file_exists($path)) {
                             <li class="dropdown-item"> <i class="flag-icon flag-icon-fr mr-2"></i> French</li>
                             <li class="dropdown-item"> <i class="flag-icon flag-icon-cn mr-2"></i> Chinese</li>
                             <li class="dropdown-item"> <i class="flag-icon flag-icon-de mr-2"></i> German</li>
-                        </ul>
+                        </ul>-->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
@@ -226,15 +226,15 @@ if (file_exists($path)) {
                                     </div>
                                 </a>
                             </li>
-                            <li class="dropdown-divider"></li>
+                            <!-- <li class="dropdown-divider"></li>
                             <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Inbox</li>
                             <li class="dropdown-divider"></li>
                             <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>
                             <li class="dropdown-divider"></li>
                             <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li>
-                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-divider"></li> -->
                             <a href="index.php?page_layout=logout" class="dropdown-item"><i class="icon-power mr-2"></i>
-                                Logout</a>
+                                Đăng xuất</a>
                         </ul>
                     </li>
                 </ul>

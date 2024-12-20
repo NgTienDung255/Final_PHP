@@ -2,7 +2,7 @@
 <footer class="footer">
     <div class="container">
         <div class="text-center">
-            Copyright © 2018 Dashtreme Admin
+            Tên nhà hàng ở đây
         </div>
     </div>
 </footer>
@@ -12,7 +12,7 @@
     </div>
     <div class="right-sidebar-content">
 
-        <p class="mb-0">Gaussion Texture</p>
+        <p class="mb-0">1</p>
         <hr>
 
         <ul class="switcher">
@@ -24,7 +24,7 @@
             <li id="theme6"></li>
         </ul>
 
-        <p class="mb-0">Gradient Background</p>
+        <p class="mb-0">2</p>
         <hr>
 
         <ul class="switcher">
