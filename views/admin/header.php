@@ -110,29 +110,29 @@ if (file_exists($path)) {
             <div class="brand-logo">
                 <a href="index.php?page_layout=index">
                     <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-                    <h5 class="logo-text">Dashtreme Admin</h5>
+                    <h5 class="logo-text">Admin</h5>
                 </a>
             </div>
             <ul class="sidebar-menu do-nicescrol">
-                <li class="sidebar-header">MAIN NAVIGATION</li>
+                <li class="sidebar-header">Menu</li>
                 <li>
                     <a href="index.php?page_layout=danhmucmonan">
-                        <i class="zmdi zmdi-view-dashboard"></i> <span>Danh Mục Món Ăn</span>
+                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý Món Ăn</span>
                     </a>
                 </li>
                 <li>
                     <a href="index.php?page_layout=quanlytaikhoan">
-                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản Lý Tài Khoản</span>
+                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý Tài Khoản</span>
                     </a>
                 </li>
                 <li>
                     <a href="index.php?page_layout=quanLyNguyenLieu">
-                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản Lý Nguyên liệu</span>
+                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý Nguyên liệu</span>
                     </a>
                 </li>
                 <li>
                     <a href="index.php?page_layout=danhmuchoadonbanhang">
-                        <i class="zmdi zmdi-view-dashboard"></i> <span>Danh mục hóa đơn bán</span>
+                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý hóa đơn bán</span>
                     </a>
                 </li>
                 <li>
@@ -147,7 +147,7 @@ if (file_exists($path)) {
                 </li>
                 <li>
                     <a href="index.php?page_layout=giamGia">
-                        <i class="zmdi zmdi-view-dashboard"></i> <span>Giảm giá</span>
+                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý giảm giá</span>
                     </a>
                 </li>
                 <li>
