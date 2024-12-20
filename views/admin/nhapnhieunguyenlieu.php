@@ -2,19 +2,32 @@
 <?php
 include_once '../../models/ketnoi.php';
 ?>
+
 <?php
-if (isset($_POST['soluong']) && (isset($_GET['id']))) {
-    foreach ($_SESSION['nl'] as $key => $value) {
-        if ($_GET['id'] == $key) {
-            $_SESSION['nl'][$key] = $_POST['soluong'];
-            if ((int)$_POST['soluong'] < 1) {
-                unset($_SESSION['nl'][$key]);
-            }
-        }
+if (isset($_POST['soluong']) && isset($_GET['id'])) {
+    $id = $_GET['id'];  // Lấy id nguyên liệu từ URL
+    $soluong_moi = $_POST['soluong'];  // Số lượng nhập từ form
+
+    // Truy vấn để lấy số lượng còn lại trong cơ sở dữ liệu
+    $sql = "SELECT SoLuongCon FROM nguyenlieu WHERE MaNL = $id";
+    $query = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($query);
+
+    // Tính toán số lượng mới
+    $soluong_con = $row['SoLuongCon'] + $soluong_moi;
+
+    // Cập nhật lại số lượng trong cơ sở dữ liệu
+    $update_sql = "UPDATE nguyenlieu SET SoLuongCon = $soluong_con WHERE MaNL = $id";
+    if (mysqli_query($conn, $update_sql)) {
+        // Sau khi cập nhật thành công, chuyển hướng về trang quản lý nguyên liệu
+        header('Location: quanlynguyenlieu.php');
+        exit();
+    } else {
+        echo 'Lỗi cập nhật dữ liệu!';
     }
-} else {
 }
 ?>
+
 <div class="content-wrapper">
     <a href="quanLyNguyenLieu.php" class="btn btn-light btn-round px-5" type="submit">Quay lại</a>
     <div class="row">
@@ -35,11 +48,11 @@ if (isset($_POST['soluong']) && (isset($_GET['id']))) {
                             </thead>
                             <tbody>
                                 <?php
-                                if (isset($_SESSION['nl']) && (is_array($_SESSION['nl']))) {
+                                if (isset($_SESSION['nl']) && is_array($_SESSION['nl'])) {
                                     $so = 1;
                                     $tongtien = 0;
                                     foreach ($_SESSION['nl'] as $key => $value) {
-                                        $sql = "SELECT * FROM `nguyenlieu` WHERE MaNL =" . $key . "";
+                                        $sql = "SELECT * FROM `nguyenlieu` WHERE MaNL = $key";
                                         $query = mysqli_query($conn, $sql);
                                         $row = mysqli_fetch_assoc($query);
                                 ?>

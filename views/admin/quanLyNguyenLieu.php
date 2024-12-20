@@ -31,14 +31,14 @@ $index = ($page - 1) * $per_page + 1;
                 <div class="card-body">
                     <h5 class="card-title">Nguyên liệu</h5>
                     <a href="themnl.php" class="btn btn-light btn-round px-5" type="submit">Thêm</a>
-                    <a href="nhapnhieunguyenlieu.php" class="btn btn-light btn-round px-5" name="btnsubmit"
+                    <!--<a href="nhapnhieunguyenlieu.php" class="btn btn-light btn-round px-5" name="btnsubmit"
                         type="submit">Nhập
                         nguyên
                         liệu(<?php if (isset($_SESSION['nl'])) {
                                     echo count($_SESSION['nl']);
                                 } else {
                                     echo '0';
-                                } ?>)</a>
+                                } ?>)</a>-->
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
@@ -46,13 +46,13 @@ $index = ($page - 1) * $per_page + 1;
                                     <th scope="col">Mã Nguyên Liệu</th>
                                     <th scope="col">Tên Nguyên Liệu</th>
                                     <th scope="col">Đơn giá nhập</th>
-                                    <th scope="col">Số lượng còn</th>
+                                    <th scope="col">Số lượng </th>
                                     <th scope="col">Sửa/Xóa</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <form action="nhapnhieunguyenlieu.php" method="">
+                                <form action="nhapnguyenlieu.php" method="">
                                     <?php
                                     while ($row = mysqli_fetch_assoc($query)) { ?>
                                     <tr>
@@ -67,8 +67,14 @@ $index = ($page - 1) * $per_page + 1;
                                                     echo '<a style="color: red;" href = "nhapnguyenlieu.php?id=' .  $row['MaNL'] . '"> / Nhập thêm</a>';
                                                 } ?>
                                         </th>
-                                        <th scope="col"><a href="themnguyenlieu.php?MaNL=<?php echo $row['MaNL']; ?>"
+                                        <!--<th scope="col"><a href="themnguyenlieu.php?MaNL=<?php echo $row['MaNL']; ?>"
                                                 type="submit" value="">Nhập</a>
+                                        </th>-->
+                                        <th scope="col">
+                                            <form action="nhapnguyenlieu.php" method="GET">
+                                                <input type="hidden" name="id" value="<?php echo $row['MaNL']; ?>">
+                                                <button type="submit" class="btn btn-primary">Nhập</button>
+                                            </form>
                                         </th>
 
                                     </tr>
