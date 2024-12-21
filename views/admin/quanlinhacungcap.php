@@ -28,6 +28,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
+                <h5 class="card-title">Danh sách nhà cung cấp</h5>
                     <a class="btn-create btn btn-success" href="./product_create.php">Thêm nhà cung cấp</a> 
                     <div class="table-responsive">
                         <table class="table table-bordered">

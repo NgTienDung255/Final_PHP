@@ -45,7 +45,7 @@ include '../admin/header.php';
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Cập nhật Nhà cung cấp</h5>
+                    <h5 class="card-title">Cập nhật loại sản phẩm</h5>
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <!-- Biểu mẫu để cập nhật nhà cung cấp -->
