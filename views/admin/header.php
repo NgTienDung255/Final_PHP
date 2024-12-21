@@ -109,7 +109,6 @@ if (file_exists($path)) {
         <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
             <div class="brand-logo">
                 <a href="index.php?page_layout=index">
-                    <img src="../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
                     <h5 class="logo-text">Admin</h5>
                 </a>
             </div>
