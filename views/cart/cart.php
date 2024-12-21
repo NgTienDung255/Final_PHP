@@ -42,7 +42,7 @@
 
         <div class="card">
             <div class="card-header">
-                <h2>Shopping Cart</h2>
+                <h2>Giỏ hàng</h2>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -76,10 +76,10 @@
                                 <thead>
                                     <tr>
 
-                                        <th class="text-center py-3 px-4" style="min-width: 400px;">Product Name &amp; Details</th>
-                                        <th class="text-right py-3 px-4" style="width: 100px;">Price</th>
-                                        <th class="text-center py-3 px-4" style="width: 120px;">Quantity</th>
-                                        <th class="text-right py-3 px-4" style="width: 100px;">Total</th>
+                                        <th class="text-center py-3 px-4" style="min-width: 400px;">Món ăn &amp; chi tiết</th>
+                                        <th class="text-right py-3 px-4" style="width: 100px;">Giá</th>
+                                        <th class="text-center py-3 px-4" style="width: 120px;">Số lượng</th>
+                                        <th class="text-right py-3 px-4" style="width: 100px;">Tổng</th>
                                         <th class="text-center align-middle py-3 px-0" style="width: 40px;"><a href="#" class="shop-tooltip float-none text-light" title data-original-title="Clear cart"><i class="ino ion-md-trash"></i></a></th>
                                     </tr>
                                 </thead>
@@ -142,7 +142,7 @@
                     </div>
                 </div>-->
                 <div class="float-right">
-                    <a href="../../index.php"><button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button></a>
+                    <a href="../../index.php"><button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Trở lại màn hình chính</button></a>
                     <a href="muahang.php"><button type="button" class="btn btn-lg btn-primary mt-2">Thanh toán</button></a>
                 </div>
             </div>
