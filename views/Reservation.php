@@ -41,12 +41,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <select class="form-select" id="select1">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                                <label for="select1">Số người</label>
+                                <input type="number" class="form-control" id="number" placeholder="Số người" />
+                                <label for="number">Số người</label>
                             </div>
                         </div>
                         <div class="col-12">
@@ -92,11 +88,17 @@
     document.getElementById('bookingForm').addEventListener('submit', function(event) {
         event.preventDefault();
 
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const datetime = document.getElementById('datetime').value;
-        const guests = document.getElementById('select1').value;
-        const message = document.getElementById('message').value;
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const datetime = document.getElementById('datetime').value.trim();
+        const guests = document.getElementById('number').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // Kiểm tra nếu bất kỳ trường nào trừ yêu cầu đặc biệt không được nhập
+        if (!name || !email || !datetime || !guests) {
+            alert('Vui lòng nhập đầy đủ thông tin cần thiết');
+            return;
+        }
 
         // Gửi email thông qua EmailJS
         emailjs.send("service_phpbtl","template_oue5m8u", {
