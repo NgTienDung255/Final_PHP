@@ -54,8 +54,7 @@
                                         <span>' . $row1["TenSP"] . '</span>
                                         <span class=' . '"text-primary"' . '>' . $row1["GiaBan"] . '</span>
                                     </h5>
-                                    <small class=' . '"fst-italic"' . '>Ipsum ipsum clita erat amet dolor justo
-                                        diam</small>
+                                    <small class=' . '"fst-italic"' . '></small>
                                 </div>
                                 <a href="../views/cart/themhang.php?MaSP=' . $row1["MaSP"] . '"><button type="button" class="btn btn-success" style="margin-left: 15px">+</button></a>
                             </div>
@@ -82,8 +81,7 @@
                                         <span>' . $row2["TenSP"] . '</span>
                                         <span class=' . '"text-primary"' . '>' . $row2["GiaBan"] . '</span>
                                     </h5>
-                                    <small class=' . '"fst-italic"' . '>Ipsum ipsum clita erat amet dolor justo
-                                        diam</small>
+                                    <small class=' . '"fst-italic"' . '></small>
                                 </div>
                                 <a href="../views/cart/themhang.php?MaSP=' . $row2["MaSP"] . '"><button type="button" class="btn btn-success" style="margin-left: 15px">+</button></a>
                             </div>
@@ -110,8 +108,7 @@
                                         <span>' . $row3["TenSP"] . '</span>
                                         <span class=' . '"text-primary"' . '>' . $row3["GiaBan"] . '</span>
                                     </h5>
-                                    <small class=' . '"fst-italic"' . '>Ipsum ipsum clita erat amet dolor justo
-                                        diam</small>
+                                    <small class=' . '"fst-italic"' . '></small>
                                 </div>
                                 <a href="../views/cart/themhang.php?MaSP=' . $row3["MaSP"] . '"><button type="button" class="btn btn-success" style="margin-left: 15px">+</button></a>
                             </div>
@@ -138,8 +135,7 @@
                                         <span>' . $row4["TenSP"] . '</span>
                                         <span class=' . '"text-primary"' . '>' . $row4["GiaBan"] . '</span>
                                     </h5>
-                                    <small class=' . '"fst-italic"' . '>Ipsum ipsum clita erat amet dolor justo
-                                        diam</small>
+                                    <small class=' . '"fst-italic"' . '></small>
                                 </div>
                                 <a href="../views/cart/themhang.php?MaSP=' . $row4["MaSP"] . '"><button type="button" class="btn btn-success" style="margin-left: 15px">+</button></a>
                             </div>
@@ -166,8 +162,7 @@
                                         <span>' . $row5["TenSP"] . '</span>
                                         <span class=' . '"text-primary"' . '>' . $row5["GiaBan"] . '</span>
                                     </h5>
-                                    <small class=' . '"fst-italic"' . '>Ipsum ipsum clita erat amet dolor justo
-                                        diam</small>
+                                    <small class=' . '"fst-italic"' . '></small>
                                 </div>
                                 <a href="../views/cart/themhang.php?MaSP=' . $row5["MaSP"] . '"><button type="button" class="btn btn-success" style="margin-left: 15px">+</button></a>
                             </div>
