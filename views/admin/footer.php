@@ -2,11 +2,7 @@
 <footer class="footer">
     <div class="container">
         <div class="text-center">
-<<<<<<< HEAD
-            
-=======
         BA’S BEST HPOT
->>>>>>> 4e8311ccb85204efb719b4d5a0a716f998144849
         </div>
     </div>
 </footer>
