@@ -11,7 +11,9 @@
 <!--End Back To Top Button-->
 
 <!--Start footer-->
-<?php include '../admin/footer.php' ?>
+<!--
+
+-->
 <!--End footer-->
 
 <!--start color switcher-->
