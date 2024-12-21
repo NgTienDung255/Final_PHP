@@ -1,6 +1,6 @@
 <?php 
 // include_once '../../models/ketnoi.php'
- $conn = mysqli_connect("localhost", "root","","btl");
+ $conn = mysqli_connect("localhost", "root","","da2");
 if(isset($_POST["btnsubmit"])){
     //Lấy giá trị từ form
     $code = $_POST["LoaiSP"];
@@ -28,7 +28,7 @@ if(isset($_POST["btnsubmit"])){
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Thêm mới sản phẩm</h5>
+                    <h5 class="card-title">Thêm mới loại sản phẩm</h5>
                     <div class="table-responsive">
                         <table class="table table-bordered">
                                 <!-- Form Thêm sản phẩm -->
