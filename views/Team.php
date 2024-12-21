@@ -10,56 +10,56 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="../views/img/team-1.jpg" alt="" />
+                        <img class="img-fluid" src="../views/img/gordonramsay.jpg" alt="" />
                     </div>
                     <h5 class="mb-0">Gordon Ramsay</h5>
                     <small>Bếp trưởng</small>
                     <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/gordonramsay"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://x.com/GordonRamsay"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/gordongram/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="../views/img/team-2.jpg" alt="" />
+                        <img class="img-fluid" src="../views/img/nurset.jpg" alt="" />
                     </div>
                     <h5 class="mb-0">Nusret Gökçe</h5>
                     <small>Bếp phó</small>
                     <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/wearenusret"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/wearenusret"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="../views/img/team-3.jpg" alt="" />
+                        <img class="img-fluid" src="../views/img/alainducasse.jpg" alt="" />
                     </div>
-                    <h5 class="mb-0">Nguyễn Minh Tuấn</h5>
+                    <h5 class="mb-0">Alain Ducasse</h5>
                     <small>Phụ Bếp</small>
                     <div class="d-flex justify-content-center mt-3">
                         <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://x.com/Alain_Ducasse1"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/alainducasse/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="team-item text-center rounded overflow-hidden">
                     <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="../views/img/team-4.jpg" alt="" />
+                        <img class="img-fluid" src="../views/img/yannick.jpg" alt="" />
                     </div>
-                    <h5 class="mb-0">Nguyễn Tiến Dũng</h5>
+                    <h5 class="mb-0">Yannick Alléno</h5>
                     <small>Bếp bánh</small>
                     <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/mano.istum"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://x.com/Chef_YAlleno"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/yannickalleno/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

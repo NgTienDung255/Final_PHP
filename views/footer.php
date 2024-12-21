@@ -38,9 +38,9 @@
                     Mở cửa
                 </h4>
                 <h5 class="text-light fw-normal">Thứ 2 - Thứ 6</h5>
-                <p>7:30 - 17:00</p>
-                <!--<h5 class="text-light fw-normal">Sunday</h5>
-                <p>10AM - 08PM</p>-->
+                <p>9:00 - 21:00</p>
+                <h5 class="text-light fw-normal">Thứ 7 - Chủ nhật</h5>
+                <p>9:00 - 23:00</p>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">
