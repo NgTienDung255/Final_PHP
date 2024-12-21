@@ -1,6 +1,6 @@
 <?php
 // include_once '../../models/ketnoi.php'
-$conn = mysqli_connect("localhost", "root", "", "btl");
+$conn = mysqli_connect("localhost", "root", "", "da2");
 if (isset($_POST["btnsubmit"])) {
     //Lấy giá trị từ form
     $code = $_POST["MaNCC"];

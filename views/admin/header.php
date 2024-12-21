@@ -117,17 +117,17 @@ if (file_exists($path)) {
                 <li class="sidebar-header">Menu</li>
                 <li>
                     <a href="index.php?page_layout=danhmucmonan">
-                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý Món Ăn</span>
+                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý món Ăn</span>
                     </a>
                 </li>
                 <li>
                     <a href="index.php?page_layout=quanlytaikhoan">
-                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý Tài Khoản</span>
+                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý tài Khoản</span>
                     </a>
                 </li>
                 <li>
                     <a href="index.php?page_layout=quanLyNguyenLieu">
-                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý Nguyên liệu</span>
+                        <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý nguyên liệu</span>
                     </a>
                 </li>
                 <li>
@@ -145,11 +145,11 @@ if (file_exists($path)) {
                         <i class="zmdi zmdi-view-dashboard"></i> <span>Công thức món</span>
                     </a>
                 </li>-->
-                <li>
+                <!--<li>
                     <a href="index.php?page_layout=giamGia">
                         <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý giảm giá</span>
                     </a>
-                </li>
+                </li>-->
                 <li>
                     <a href="index.php?page_layout=loaiSP">
                         <i class="zmdi zmdi-view-dashboard"></i> <span>Quản lý loại sản phẩm</span>

@@ -24,12 +24,12 @@
                                                 Báo Cáo theo ngày</a>
                                         </div>
                                     </th>
-                                    <th>
+                                    <!--<th>
                                         <div class="form-group">
                                             <a href="danhmuchoadonbanhang.php?page=theotuan" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>
                                                 Báo Cáo theo tuần</a>
                                         </div>
-                                    </th>
+                                    </th>-->
                                     <th>
                                         <div class="form-group">
                                             <a href="danhmuchoadonbanhang.php?page=theothang" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>

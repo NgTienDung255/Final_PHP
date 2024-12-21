@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root","","btl");
+$conn = mysqli_connect("localhost", "root","","da2");
 // Kiểm tra xem tham số MaNCC có được thiết lập trong URL hay không
 if(isset($_GET['MaNCC'])) {
     $MaNCC = $_GET['MaNCC'];
@@ -54,7 +54,7 @@ include '../admin/header.php';
                             <form name="frmEdit" id="frmEdit" method="post">
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Mã nhà cung cấp</label>
-                                    <input type="number" class="form-control" name="MaNCC" value="<?php echo isset($shop_suppliersRow['MaNCC']) ? $shop_suppliersRow['MaNCC'] : ''; ?>">
+                                    <input type="text" class="form-control" name="MaNCC" value="<?php echo isset($shop_suppliersRow['MaNCC']) ? $shop_suppliersRow['MaNCC'] : ''; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Tên nhà cung cấp</label>
