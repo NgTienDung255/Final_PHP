@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root","","btl");
+$conn = mysqli_connect("localhost", "root","","da2");
 // Kiểm tra xem tham số MaNCC có được thiết lập trong URL hay không
 if(isset($_GET['LoaiSP'])) {
     $LoaiSP = $_GET['LoaiSP'];
