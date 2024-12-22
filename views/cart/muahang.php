@@ -56,13 +56,13 @@ if (isset($_SESSION['cart'])) {
         <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4" src="../img/checkout.png" alt="" width="72" height="72">
             <h2>Thanh toán</h2>
-            <p class="lead">Vui lòng nhập đầy đủ thông tin để chúng tôi có thể thanh toán tiền cho bạn</p>
+            <p class="lead">Vui lòng nhập đầy đủ thông tin để chúng tôi có thể xác nhận thanh toán của bạn</p>
         </div>
 
         <div class="row">
             <div class="col-md-4 order-md-2 mb-4">
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="text-muted">Your cart</span>
+                    <span class="text-muted">Danh sách</span>
                     <span class="badge badge-secondary badge-pill">3</span>
                 </h4>
                 <ul class="list-group mb-3">
@@ -114,18 +114,18 @@ if (isset($_SESSION['cart'])) {
                 </ul>
             </div>
             <div class="col-md-8 order-md-1">
-                <h4 class="mb-3">Billing address</h4>
+                <h4 class="mb-3">Thông tin giao hàng</h4>
                 <form method="post" class="needs-validation" novalidate="">
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="firstName">Họ</label>
+                            <label for="firstName">Họ*</label>
                             <input name="ho" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                             <div class="invalid-feedback">
                                 Vui lòng nhập họ của bạn.
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="lastName">Tên</label>
+                            <label for="lastName">Tên*</label>
                             <input name="ten" type="text" class="form-control" id="lastName" placeholder="" value="" required="">
                             <div class="invalid-feedback">
                                 Vui lòng nhập tên của bạn.
@@ -134,20 +134,20 @@ if (isset($_SESSION['cart'])) {
                     </div>
 
                     <div class="mb-3">
-                        <label for="username">Username</label>
+                        <label for="username">Số điện thoại*</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text">@</span>
+                                <span class="input-group-text">+84</span>
                             </div>
-                            <input name="username" type="text" class="form-control" id="username" placeholder="Username" required="">
+                            <input name="username" type="text" class="form-control" id="username" placeholder="" required="">
                             <div class="invalid-feedback" style="width: 100%;">
-                                Vui lòng nhập Username.
+                                Vui lòng nhập số điện thoại.
                             </div>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                        <label for="email">Email <span class="text-muted">(Tuỳ chọn)</span></label>
                         <input type="email" class="form-control" id="email" placeholder="you@example.com">
                         <div class="invalid-feedback">
                             Please enter a valid email address for shipping updates.
@@ -155,7 +155,7 @@ if (isset($_SESSION['cart'])) {
                     </div>
 
                     <div class="mb-3">
-                        <label for="address">Địa chỉ</label>
+                        <label for="address">Địa chỉ*</label>
                         <input type="text" class="form-control" id="address" placeholder="1234 Cầu Dao" required="">
                         <div class="invalid-feedback">
                             Vui lòng nhập địa chỉ.
@@ -176,7 +176,7 @@ if (isset($_SESSION['cart'])) {
                     </div>
                     <hr class="mb-4">
 
-                    <h4 class="mb-3">Phương thức thanh toán</h4>
+                    <h4 class="mb-3">Thanh toán</h4>
 
                     <div class="d-block my-3">
                         <div class="custom-control custom-radio">
@@ -187,8 +187,8 @@ if (isset($_SESSION['cart'])) {
                             <input id="banking" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="" value="0">
                             <label class="custom-control-label" for="banking">Chuyển khoản ngân hàng nội địa</label>
                             <div class="row" id="bankInfo">
-                                <p>STK: 1016175601 Vietcombank PHAM THIEN VU</p>
-                                <p>Khách hàng lưu ý sau khi chuyển khoản chụp bill gửi cho sốp check</p>
+                                <p>STK: 1013319256 Vietcombank NGUYEN TIEN MANH</p>
+                                <p>Khách hàng lưu ý sau khi chuyển khoản chụp bill gửi qua Zalo 0987654321 cho sốp check</p>
                             </div>
                         </div>
                     </div>
@@ -240,14 +240,14 @@ if (isset($_SESSION['cart'])) {
             </div>
         </div>
 
-        <footer class="my-5 pt-5 text-muted text-center text-small">
+        <!--<footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">© 2017-2018 Company Name</p>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Privacy</a></li>
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>
             </ul>
-        </footer>
+        </footer>-->
     </div>
 
     <!-- Bootstrap core JavaScript
