@@ -24,7 +24,7 @@
             <div class="testimonial-item bg-transparent border rounded p-4">
                 <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                 <p>
-                    Boa comida e serviço rápido. Voltarei na próxima vez.
+                After the matches with MU, I often come here to eat.
                 </p>
                 <div class="d-flex align-items-center">
                     <img class="img-fluid flex-shrink-0 rounded-circle" src="../views/img/antony.jpg"

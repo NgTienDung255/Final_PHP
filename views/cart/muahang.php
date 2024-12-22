@@ -114,7 +114,7 @@ if (isset($_SESSION['cart'])) {
                 </ul>
             </div>
             <div class="col-md-8 order-md-1">
-                <h4 class="mb-3">Thông tin giao hàng</h4>
+                <h4 class="mb-3">Thông tin khách hàng</h4>
                 <form method="post" class="needs-validation" novalidate="">
                     <div class="row">
                         <div class="col-md-6 mb-3">
@@ -147,16 +147,16 @@ if (isset($_SESSION['cart'])) {
                     </div>
 
                     <div class="mb-3">
-                        <label for="email">Email <span class="text-muted">(Tuỳ chọn)</span></label>
+                        <label for="email">Email <span class="text-muted">(Tùy chọn)</span></label>
                         <input type="email" class="form-control" id="email" placeholder="you@example.com">
                         <div class="invalid-feedback">
-                            Please enter a valid email address for shipping updates.
+                            Vui lòng nhập email hợp lệ.
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="address">Địa chỉ*</label>
-                        <input type="text" class="form-control" id="address" placeholder="1234 Cầu Dao" required="">
+                        <input type="text" class="form-control" id="address" placeholder="123 Đường Láng" required="">
                         <div class="invalid-feedback">
                             Vui lòng nhập địa chỉ.
                         </div>

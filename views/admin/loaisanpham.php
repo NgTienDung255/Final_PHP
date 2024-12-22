@@ -27,7 +27,8 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <a class="btn-create btn btn-success" href="./create_sp.php">Thêm sản phẩm</a>
+                <h5 class="card-title">Danh sách loại sản phẩm</h5>
+                    <a class="btn-create btn btn-success" href="./create_sp.php">Thêm loại sản phẩm</a>
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>

@@ -64,7 +64,7 @@ include_once '../../models/ketnoi.php';
             
             <div  class="form-group">
                     <label   for="input-6">UserName</label>
-                    <input  name="UserName" value="<?php echo $rows['UserName']; ?>" type="text" class="form-control form-control-rounded" id="input-6" placeholder="Enter Your UserName">
+                    <input readonly name="UserName" value="<?php echo $rows['UserName']; ?>" type="text" class="form-control form-control-rounded" id="input-6" placeholder="Enter Your UserName">
                     <span asp-validation-for="UsernName" class="text-danger"></span>
                 </div>
                 
