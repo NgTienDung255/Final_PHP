@@ -24,7 +24,7 @@ if (isset($_GET["page_layout"])) {
 
 <head>
     <meta charset="utf-8" />
-    <title>Restoran - Bootstrap Restaurant Template</title>
+    <title>BA'S BEST HPOT Restaurant Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -32,7 +32,7 @@ if (isset($_GET["page_layout"])) {
     <!-- Favicon -->
     <link href="../views/img/favicon.ico" rel="icon" />
 
-    <!-- Google Web Fonts -->
+    <!-- Google Web Fonts (tải font qua liên kết gg font)-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
@@ -41,9 +41,9 @@ if (isset($_GET["page_layout"])) {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
+    <!-- Libraries Stylesheet nhúng thẻ css bên ngoài -->
     <link href="../views/lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="../views/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../views/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />  
     <link href="../views/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -83,7 +83,7 @@ if (isset($_GET["page_layout"])) {
                         <a href="#Team-section" class="nav-item nav-link">Đội ngũ</a>
                         <a href="#Testimonial-section" class="nav-item nav-link">Phản hồi</a>
 
-                       <!-- <div class="nav-item dropdown">
+                    <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0"> 
                                 <a href="booking.html" class="dropdown-item">Booking</a>
@@ -99,11 +99,8 @@ if (isset($_GET["page_layout"])) {
                     </a>
                     <a href="index.php?page_layout=cart" style="padding-right:10px">
                         <i style="margin-right: 5px" class="fas">&#xf07a;</i>(<?php
-                                                                                if (isset($_SESSION["cart"])) {
-                                                                                    echo array_sum($_SESSION["cart"]);
-                                                                                } else {
-                                                                                    echo 0;
-                                                                                } ?>)
+                            if (isset($_SESSION["cart"])) {echo array_sum($_SESSION["cart"]);} 
+                            else {echo 0;} ?>)
                     </a>
 
                     <a href="#Reservation-section" class="btn btn-primary py-2 px-4">Đặt bàn</a>

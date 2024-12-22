@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 08, 2024 lúc 09:07 AM
--- Phiên bản máy phục vụ: 10.4.27-MariaDB
--- Phiên bản PHP: 8.2.0
+-- Host: 127.0.0.1
+-- Generation Time: Dec 21, 2024 at 03:32 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `btl`
+-- Database: `da2`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `ban`
+-- Table structure for table `ban`
 --
 
 CREATE TABLE `ban` (
@@ -33,7 +33,7 @@ CREATE TABLE `ban` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `ban`
+-- Dumping data for table `ban`
 --
 
 INSERT INTO `ban` (`MaBan`, `TrangThai`) VALUES
@@ -51,7 +51,7 @@ INSERT INTO `ban` (`MaBan`, `TrangThai`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc đóng vai cho view `baocaodoanhthu`
+-- Stand-in structure for view `baocaodoanhthu`
 -- (See below for the actual view)
 --
 CREATE TABLE `baocaodoanhthu` (
@@ -63,7 +63,7 @@ CREATE TABLE `baocaodoanhthu` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc đóng vai cho view `baocaohoadonnhap`
+-- Stand-in structure for view `baocaohoadonnhap`
 -- (See below for the actual view)
 --
 CREATE TABLE `baocaohoadonnhap` (
@@ -76,7 +76,7 @@ CREATE TABLE `baocaohoadonnhap` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `chitiethoadon`
+-- Table structure for table `chitiethoadon`
 --
 
 CREATE TABLE `chitiethoadon` (
@@ -87,101 +87,31 @@ CREATE TABLE `chitiethoadon` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `chitiethoadon`
+-- Dumping data for table `chitiethoadon`
 --
 
 INSERT INTO `chitiethoadon` (`MaHoaDon`, `MaChiTietSP`, `SoLuong`, `TongTienHD`) VALUES
-(2, 13, 4, 480000),
-(2, 21, 5, 75000),
-(3, 16, 3, 180000),
-(5, 8, 8, 400000),
-(6, 2, 5, 1250000),
-(7, 4, 3, 1200000),
-(8, 17, 20, 1000000),
-(9, 10, 4, 400000),
 (10, 14, 3, 450000),
 (11, 21, 5, 75000),
 (12, 18, 5, 100000),
 (12, 21, 5, 75000),
-(29, 1, 1, 500000),
-(29, 3, 3, 900000),
-(29, 4, 3, 1200000),
-(30, 1, 1, 500000),
-(30, 3, 3, 900000),
-(30, 4, 3, 1200000),
-(31, 1, 1, 500000),
-(31, 3, 3, 900000),
-(31, 4, 3, 1200000),
-(32, 1, 1, 500000),
-(32, 3, 3, 900000),
-(32, 4, 3, 1200000),
-(33, 1, 1, 500000),
-(33, 3, 3, 900000),
-(33, 4, 3, 1200000),
 (34, 1, 1, 500000),
 (34, 3, 3, 900000),
 (34, 4, 3, 1200000),
-(35, 1, 1, 500000),
-(35, 3, 3, 900000),
-(35, 4, 3, 1200000),
-(36, 1, 1, 500000),
-(36, 3, 3, 900000),
-(36, 4, 3, 1200000),
-(37, 1, 1, 500000),
-(37, 3, 3, 900000),
-(37, 4, 3, 1200000),
-(38, 1, 1, 500000),
-(38, 3, 3, 900000),
-(38, 4, 3, 1200000),
-(39, 1, 1, 500000),
-(39, 3, 3, 900000),
-(40, 1, 1, 500000),
-(40, 3, 3, 900000),
-(41, 1, 1, 500000),
-(41, 3, 3, 900000),
-(42, 1, 1, 500000),
-(42, 3, 3, 900000),
-(43, 1, 1, 500000),
-(43, 3, 3, 900000),
-(44, 1, 1, 500000),
-(44, 3, 3, 900000),
-(45, 1, 1, 500000),
-(45, 3, 1, 300000),
-(46, 2, 1, 250000),
-(46, 3, 1, 300000),
-(46, 4, 1, 400000),
 (47, 8, 1, 50000),
-(48, 8, 4, 200000),
-(49, 10, 2, 200000),
-(50, 10, 4, 400000),
-(50, 11, 2, 400000),
-(51, 10, 2, 200000),
-(51, 11, 2, 400000),
-(52, 8, 2, 100000),
-(52, 10, 2, 200000),
-(53, 8, 3, 150000),
-(54, 1, 2, 1000000),
-(55, 3, 1, 300000),
-(56, 1, 1, 500000),
-(56, 2, 1, 250000),
-(56, 3, 2, 600000),
-(57, 1, 1, 500000),
-(57, 3, 1, 300000),
-(57, 8, 1, 50000),
-(58, 3, 1, 300000),
-(59, 1, 1, 500000),
-(59, 2, 1, 250000),
-(61, 1, 1, 500000),
-(64, 2, 1, 250000),
-(65, 8, 2, 100000),
-(66, 8, 15, 750000),
-(67, 1, 3, 1500000),
-(68, 8, 3, 150000);
+(68, 8, 3, 150000),
+(69, 1, 1, 500000),
+(70, 1, 1, 500000),
+(70, 2, 1, 250000),
+(71, 1, 1, 500000),
+(72, 1, 2, 1000000),
+(72, 2, 1, 250000),
+(73, 1, 1, 500000);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `chitiethoadonnhap`
+-- Table structure for table `chitiethoadonnhap`
 --
 
 CREATE TABLE `chitiethoadonnhap` (
@@ -192,7 +122,7 @@ CREATE TABLE `chitiethoadonnhap` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `chitiethoadonnhap`
+-- Dumping data for table `chitiethoadonnhap`
 --
 
 INSERT INTO `chitiethoadonnhap` (`MaHoaDonNhap`, `MaNL`, `SoLuongNhap`, `TongTien`) VALUES
@@ -257,12 +187,22 @@ INSERT INTO `chitiethoadonnhap` (`MaHoaDonNhap`, `MaNL`, `SoLuongNhap`, `TongTie
 (37, 1, 150, 750000),
 (37, 2, 1, 2000),
 (37, 3, 1, 10000),
-(38, 1, 10, 50000);
+(38, 1, 10, 50000),
+(39, 1, 3, 15000),
+(39, 2, 1, 2000),
+(39, 3, 1, 10000),
+(40, 1, 1, 5000),
+(41, 1, 1, 5000),
+(42, 1, 1, 5000),
+(43, 11, 1, 15000),
+(44, 1, 1, 5000),
+(45, 1, 1, 5000),
+(46, 1, 15, 75000);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `congthucmon`
+-- Table structure for table `congthucmon`
 --
 
 CREATE TABLE `congthucmon` (
@@ -272,7 +212,7 @@ CREATE TABLE `congthucmon` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `congthucmon`
+-- Dumping data for table `congthucmon`
 --
 
 INSERT INTO `congthucmon` (`MaSP`, `MaNL`, `SoLuongCanDung`) VALUES
@@ -300,7 +240,7 @@ INSERT INTO `congthucmon` (`MaSP`, `MaNL`, `SoLuongCanDung`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `danhmucsp`
+-- Table structure for table `danhmucsp`
 --
 
 CREATE TABLE `danhmucsp` (
@@ -313,20 +253,20 @@ CREATE TABLE `danhmucsp` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `danhmucsp`
+-- Dumping data for table `danhmucsp`
 --
 
 INSERT INTO `danhmucsp` (`MaSP`, `MaLoai`, `TenSP`, `GiaBan`, `GioiThieuSP`, `Anh`) VALUES
-(1, 1, 'Lẩu bò nhúng giấm', 500000, '', '1.jpg'),
-(2, 1, 'Lẩu gà thuốc bắc', 250000, '', '2.jpg'),
-(3, 1, 'Lẩu mắm', 300000, '', '3.jpg'),
-(4, 1, 'Lẩu ếch', 400000, '', '4.jpg'),
-(5, 1, 'Lẩu hải sản', 600000, '', '5.jpg'),
-(6, 2, 'Nộm chân gà pha lê', 100000, '', '1a.jpg'),
-(7, 2, 'Salad hoa quả', 80000, '', '2a.jpg'),
-(8, 2, 'Khoai lang kén', 50000, '', '3a.jpg'),
-(9, 2, 'Kim chi Hàn Quốc', 40000, '', '4a.jpg'),
-(10, 2, 'Bánh mỳ bơ tỏi', 100000, '', '5a.jpg'),
+(1, 1, 'Lẩu bò nhúng giấm', 500000, 'Lẩu bò nhúng giấm với hương vị đặc biệt đem tới tr', '1.jpg'),
+(2, 1, 'Lẩu gà thuốc bắc', 250000, 'Lẩu gà thuốc bắc là một món ăn truyền thống của Vi', '2.jpg'),
+(3, 1, 'Lẩu mắm', 300000, 'Lẩu mắm là một món ăn đặc sản nổi tiếng miền Trung', '3.jpg'),
+(4, 1, 'Lẩu ếch', 400000, 'Lẩu ếch là một món ăn đặc trưng trong ẩm thực Việt', '4.jpg'),
+(5, 1, 'Lẩu hải sản', 600000, 'Lẩu hải sản là một món ăn phổ biến trong ẩm thực V', '5.jpg'),
+(6, 2, 'Nộm chân gà pha lê', 100000, 'Nộm chân gà pha lê là một món ăn độc đáo và hấp dẫ', '1a.jpg'),
+(7, 2, 'Salad hoa quả', 80000, 'Salad hoa quả không chỉ ngon miệng mà còn là một l', '2a.jpg'),
+(8, 2, 'Khoai lang kén', 50000, 'Khoai lang kén là một món ăn vặt phổ biến và hấp d', '3a.jpg'),
+(9, 2, 'Kim chi Hàn Quốc', 40000, 'Kim chi là một món ăn truyền thống và đặc trưng củ', '4a.jpg'),
+(10, 2, 'Bánh mỳ bơ tỏi', 100000, 'Bánh mì bơ tỏi là một món ăn nổi tiếng có nguồn gố', '5a.jpg'),
 (11, 3, 'Bò tảng tươi nguyên vị', 200000, '', '6a.jpg'),
 (12, 2, 'Bò tảng ướp Hàn Quốc', 250000, '', '1b.jpg'),
 (13, 3, 'Ba chỉ heo tươi', 120000, '', '2b.jpg'),
@@ -342,7 +282,7 @@ INSERT INTO `danhmucsp` (`MaSP`, `MaLoai`, `TenSP`, `GiaBan`, `GioiThieuSP`, `An
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `giamgia`
+-- Table structure for table `giamgia`
 --
 
 CREATE TABLE `giamgia` (
@@ -351,7 +291,7 @@ CREATE TABLE `giamgia` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `giamgia`
+-- Dumping data for table `giamgia`
 --
 
 INSERT INTO `giamgia` (`MaGiamGia`, `GiamGia`) VALUES
@@ -365,7 +305,7 @@ INSERT INTO `giamgia` (`MaGiamGia`, `GiamGia`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `hoadonban`
+-- Table structure for table `hoadonban`
 --
 
 CREATE TABLE `hoadonban` (
@@ -379,78 +319,26 @@ CREATE TABLE `hoadonban` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `hoadonban`
+-- Dumping data for table `hoadonban`
 --
 
 INSERT INTO `hoadonban` (`MaHoaDon`, `NgayLap`, `UserName`, `MaBan`, `GiamGia`, `PhuongThucTT`, `GhiChu`) VALUES
-(2, '2023-02-02 10:06:49', 'admin', 1, 0, b'01', NULL),
-(3, '2023-03-20 10:07:32', 'thienvu', 5, 25, b'01', NULL),
-(5, '2023-05-20 10:08:14', 'admin2', 8, 999, b'01', NULL),
-(6, '2023-06-20 10:08:26', 'locreus', 9, 14587, b'01', NULL),
-(7, '2023-07-20 10:08:43', 'admin2', 4, 999, b'00', NULL),
-(8, '2023-08-20 10:08:54', 'thienvu', 2, 25, b'01', NULL),
-(9, '2023-09-20 10:09:09', 'admin2', 3, 14587, b'01', NULL),
-(10, '2023-10-20 10:09:23', 'locreus', 7, 666, b'00', NULL),
-(11, '2023-10-24 17:34:18', 'admin', 2, 14588, b'01', NULL),
-(12, '2023-10-26 06:02:43', 'admin', 2, 25, b'01', NULL),
-(13, '2023-11-06 12:04:53', 'thienvu', 6, 14588, b'01', NULL),
-(14, '2023-11-06 12:05:45', 'thienvu', 6, 14588, b'01', NULL),
-(15, '2023-11-06 12:06:01', 'thienvu', 6, 14588, b'00', NULL),
-(16, '2023-11-06 12:07:12', 'thienvu', 6, 14588, b'11', NULL),
-(17, '2023-11-06 12:07:46', 'thienvu', 6, 14588, b'11', NULL),
-(18, '2023-11-06 12:08:35', 'thienvu', 6, 14588, b'01', NULL),
-(19, '2023-11-06 12:08:40', 'thienvu', 6, 14588, b'00', NULL),
-(20, '2023-11-06 06:17:16', 'admin', 2, 25, b'01', NULL),
-(21, '2023-11-06 12:29:17', 'thienvu', 6, 14588, b'00', NULL),
-(22, '2023-11-06 12:29:53', 'thienvu', 6, 14588, b'00', NULL),
-(23, '2023-11-06 12:31:25', 'thienvu', 6, 14588, b'00', NULL),
-(24, '2023-11-06 12:31:42', 'thienvu', 6, 666, b'01', NULL),
-(25, '2023-11-06 12:33:16', 'thienvu', 6, 666, b'01', NULL),
-(26, '2023-11-06 12:33:34', 'thienvu', 6, 666, b'01', NULL),
-(27, '2023-11-06 12:35:46', 'thienvu', 7, 14588, b'01', NULL),
-(28, '2023-11-06 12:35:58', 'thienvu', 1, 14588, b'00', NULL),
-(29, '2023-11-06 12:50:52', 'thienvu', 9, 14588, b'00', NULL),
-(30, '2023-11-06 13:04:42', 'thienvu', 9, 999, b'00', NULL),
-(31, '2023-11-06 13:38:41', 'thienvu', 9, 999, b'00', NULL),
-(32, '2023-11-06 13:43:07', 'thienvu', 9, 999, b'00', NULL),
-(33, '2023-11-06 13:47:09', 'thienvu', 9, 999, b'00', NULL),
-(34, '2023-11-06 13:50:26', 'thienvu', 9, 999, b'00', NULL),
-(35, '2023-11-06 13:51:19', 'thienvu', 1, 0, b'00', NULL),
-(36, '2023-11-06 13:52:24', 'thienvu', 1, 0, b'00', NULL),
-(37, '2023-11-06 13:52:45', 'thienvu', 1, 0, b'00', NULL),
-(38, '2023-11-06 13:53:42', 'thienvu', 1, 0, b'00', NULL),
-(39, '2023-11-06 13:54:42', 'thienvu', 1, 0, b'00', NULL),
-(40, '2023-11-06 13:57:06', 'thienvu', 1, 0, b'00', NULL),
-(41, '2023-11-06 13:57:23', 'thienvu', 1, 0, b'00', NULL),
-(42, '2023-11-06 13:57:58', 'thienvu', 1, 0, b'00', NULL),
-(43, '2023-11-06 13:58:28', 'thienvu', 1, 0, b'00', NULL),
-(44, '2023-11-06 13:58:42', 'thienvu', 1, 0, b'00', NULL),
-(45, '2023-11-06 13:59:23', 'thienvu', 1, 0, b'00', NULL),
-(46, '2023-11-06 14:00:17', 'thienvu', 1, 0, b'00', NULL),
-(47, '2023-11-06 14:25:06', 'thienvu', 1, 14588, b'00', NULL),
-(48, '2023-11-06 14:25:31', 'thienvu', 1, 0, b'00', NULL),
-(49, '2023-11-06 14:27:39', 'thienvu', 1, 0, b'00', NULL),
-(50, '2023-11-06 14:30:05', 'thienvu', 1, 0, b'00', NULL),
-(51, '2023-11-06 14:31:32', 'thienvu', 1, 0, b'00', NULL),
-(52, '2023-11-06 15:00:23', 'thienvu', 1, 0, b'00', NULL),
-(53, '2023-11-06 15:00:57', 'thienvu', 1, 0, b'00', NULL),
-(54, '2023-11-06 15:01:24', 'thienvu', 1, 0, b'00', NULL),
-(55, '2023-11-06 15:02:49', 'thienvu', 1, 0, b'00', NULL),
-(56, '2023-11-06 15:49:06', 'thienvu', 1, 0, b'00', NULL),
-(57, '2023-11-07 16:50:06', 'thienvu', 8, 14588, b'00', NULL),
-(58, '2023-11-07 16:50:35', 'admin', 1, 0, b'00', NULL),
-(59, '2023-11-08 11:19:37', 'thienvu', 1, 0, b'00', NULL),
-(61, '2023-11-09 07:46:15', 'thienvu', NULL, 25, b'00', 'aa'),
-(64, '2023-11-09 07:49:54', 'thienvu', NULL, 0, b'00', 'â'),
-(65, '2023-11-09 07:51:27', 'thienvu', 1, 0, b'00', NULL),
-(66, '2023-11-09 09:21:18', 'thienvu', 1, 14588, b'00', NULL),
-(67, '2023-11-09 09:27:59', 'thienvu', NULL, 0, b'00', ''),
-(68, '2023-11-23 11:17:55', 'thienvu', 1, 0, b'00', NULL);
+(10, '2024-10-20 10:09:23', 'dung', 7, 666, b'00', NULL),
+(11, '2024-10-24 17:34:18', 'admin', 2, 14588, b'01', NULL),
+(12, '2024-10-26 06:02:43', 'admin', 2, 25, b'01', NULL),
+(34, '2024-11-06 13:50:26', 'thienvu', 9, 999, b'00', NULL),
+(47, '2024-11-06 14:25:06', 'thienvu', 1, 14588, b'00', NULL),
+(68, '2024-11-23 11:17:55', 'thienvu', 1, 0, b'00', NULL),
+(69, '2024-12-21 11:00:29', 'tuan', 2, 14588, b'01', NULL),
+(70, '2024-12-21 17:33:43', 'tuan', 1, 0, b'01', NULL),
+(71, '2024-12-21 18:34:17', 'thienvu', 1, 0, b'00', NULL),
+(72, '2024-12-21 19:08:25', 'tuan', 1, 0, b'00', NULL),
+(73, '2024-12-21 19:26:45', 'tuan', 1, 0, b'00', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `hoadonnhap`
+-- Table structure for table `hoadonnhap`
 --
 
 CREATE TABLE `hoadonnhap` (
@@ -462,7 +350,7 @@ CREATE TABLE `hoadonnhap` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `hoadonnhap`
+-- Dumping data for table `hoadonnhap`
 --
 
 INSERT INTO `hoadonnhap` (`MaHoaDonNhap`, `MaNCC`, `UserName`, `NgayNhapHang`, `GhiChu`) VALUES
@@ -503,12 +391,20 @@ INSERT INTO `hoadonnhap` (`MaHoaDonNhap`, `MaNCC`, `UserName`, `NgayNhapHang`, `
 (35, 1, 'admin', '2023-11-08 21:10:12', NULL),
 (36, 3, 'admin', '2023-11-08 21:23:54', NULL),
 (37, 3, 'admin', '2023-11-09 09:24:14', NULL),
-(38, 1, 'admin', '2024-02-29 14:08:22', NULL);
+(38, 1, 'admin', '2024-02-29 14:08:22', NULL),
+(39, 1, 'admin', '2024-12-20 22:59:33', NULL),
+(40, 1, 'admin', '2024-12-20 23:00:02', NULL),
+(41, 1, 'admin', '2024-12-20 23:00:12', NULL),
+(42, 1, 'admin', '2024-12-20 23:00:24', NULL),
+(43, 1, 'admin', '2024-12-20 23:05:17', NULL),
+(44, 1, 'admin1', '2024-12-21 18:26:08', NULL),
+(45, 1, 'admin1', '2024-12-21 19:05:54', NULL),
+(46, 1, 'admin1', '2024-12-21 19:23:53', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `loaisp`
+-- Table structure for table `loaisp`
 --
 
 CREATE TABLE `loaisp` (
@@ -517,7 +413,7 @@ CREATE TABLE `loaisp` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `loaisp`
+-- Dumping data for table `loaisp`
 --
 
 INSERT INTO `loaisp` (`LoaiSP`, `TenLoai`) VALUES
@@ -526,12 +422,12 @@ INSERT INTO `loaisp` (`LoaiSP`, `TenLoai`) VALUES
 (3, 'Món chính'),
 (4, 'Món tráng miệng'),
 (5, 'Nước uống'),
-(6, '');
+(6, 'Khác.');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `nguyenlieu`
+-- Table structure for table `nguyenlieu`
 --
 
 CREATE TABLE `nguyenlieu` (
@@ -542,25 +438,26 @@ CREATE TABLE `nguyenlieu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `nguyenlieu`
+-- Dumping data for table `nguyenlieu`
 --
 
 INSERT INTO `nguyenlieu` (`MaNL`, `TenNL`, `DonGiaNhap`, `SoLuongCon`) VALUES
-(1, 'Sữa', 5000, 15),
-(2, 'Đường', 2000, 512),
-(3, 'Cà phê', 10000, 2502),
+(1, 'Sữa', 5000, 38),
+(2, 'Đường', 2000, 513),
+(3, 'Cà phê', 10000, 2503),
 (4, 'Trà xanh', 1500, 1510),
 (5, 'Kem', 6000, 1123),
 (6, 'Trứng', 2000, 504),
 (7, 'Thịt lợn', 12000, 444),
 (8, 'Thịt bò', 20000, 696),
 (9, 'Khoai tây', 3000, 584.5),
-(10, 'Cà chua', 1000, 1300);
+(10, 'Cà chua', 1000, 1300),
+(11, 'Súp lơ', 15000, 11);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `nhacungcap`
+-- Table structure for table `nhacungcap`
 --
 
 CREATE TABLE `nhacungcap` (
@@ -571,20 +468,20 @@ CREATE TABLE `nhacungcap` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `nhacungcap`
+-- Dumping data for table `nhacungcap`
 --
 
 INSERT INTO `nhacungcap` (`MaNCC`, `TenNCC`, `DiaChi`, `GhiChu`) VALUES
-(1, 'Thành Nam Food', '168/42 DX006 , KP 8, Bình Dương', NULL),
+(1, 'Thành Nam Food', '12b Nguyễn Huệ, phường Thủ Đức, Hồ Chí Minh', ''),
 (2, 'CP Việt Nam', 'Số 2 đường 2A, KCN Biên Hoà II', NULL),
-(3, 'CTCP Thực phẩm Thiên Vương', '30 Nguyễn Khang, Yên Hòa, Cầu Giấy, Hà Nội', NULL),
-(4, 'Công ty TNHH Thực phẩm Hữu Nghị', '40/2/5 Trần Thị Do', NULL),
+(3, 'CTCP Thực phẩm Thiên Vương', '30 Nguyễn Khang, Yên Hòa, Cầu Giấy, Hà Nội.', ''),
+(4, 'Công ty TNHH Thực phẩm Hữu Nghị', '40/2/5 Trần Quốc Hoàn, Cầu Giấy, Hà Nội', NULL),
 (5, 'Công ty TNHH Thực phẩm Nguyên Hà', '14/7 Bis Kỳ Đồng, Phường 9, Quận 3, TP. HCM', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc đóng vai cho view `thongtinchitiethoadonban`
+-- Stand-in structure for view `thongtinchitiethoadonban`
 -- (See below for the actual view)
 --
 CREATE TABLE `thongtinchitiethoadonban` (
@@ -597,7 +494,7 @@ CREATE TABLE `thongtinchitiethoadonban` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc đóng vai cho view `thongtinhoadonnhap`
+-- Stand-in structure for view `thongtinhoadonnhap`
 -- (See below for the actual view)
 --
 CREATE TABLE `thongtinhoadonnhap` (
@@ -611,7 +508,7 @@ CREATE TABLE `thongtinhoadonnhap` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -627,101 +524,105 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`UserName`, `PassWord`, `LoaiUser`, `Ho`, `Ten`, `DiaChi`, `SDT`, `NgaySinh`, `GhiChu`) VALUES
-('admin', '123', b'00', 'Đào', 'Tiến Đạt', 'Ninh Bình', '0865059383', '2002-11-05 00:00:00', NULL),
+('admin', '123', b'00', 'Phạm', 'Ngọc Tuyền', 'Hà Nội', '0352727002', '2002-01-01 00:00:00', NULL),
+('admin1', '123', b'00', 'Nguyễn ', 'Thị Xuyến', 'Nam Định', '0352727002', '2003-02-17 00:00:00', NULL),
 ('admin2', '123', b'11', 'Nguyễn', 'Nguyên', 'Hà Nội', '0123456789', '2000-10-20 09:00:12', NULL),
 ('dat', '123', b'10', NULL, '', NULL, NULL, NULL, NULL),
-('khaitho', '123', b'01', 'Nguyễn', 'Thế Khải', 'Bắc Giang', '0258963145', '2002-01-10 09:02:13', NULL),
-('locreus', '123', b'00', 'Đoàn', 'Đình Lộc', 'Quảng Ninh', '0145236985', '2002-05-05 09:02:55', NULL),
+('dung', '123', b'00', 'Nguyễn ', 'Tiến Dũng ', 'Bắc Ninh ', '0145236985', '2002-05-05 09:02:55', NULL),
+('manh', '123', b'01', 'Nguyễn ', 'Tiến Mạnh ', 'Hải Phòng ', '0222222', NULL, NULL),
+('Nbang', '123', b'00', 'Như', 'Băng ', 'Nam Định', '12345', '2010-03-25 00:00:00', NULL),
+('nmtuan', '123', b'00', 'Nguyễn ', 'Minh Tuấn', 'Hà Nội', '012345678', '0000-00-00 00:00:00', NULL),
 ('thanh', '123', b'10', 'Đặng', 'Tuấn Thành', 'Hà Tĩnh', '0865059355', '2002-09-27 00:00:00', NULL),
 ('thienvu', '123', b'01', 'Phạm', 'Thiên Vũ', 'Hà Nội', '0865059383', '0000-00-00 00:00:00', NULL),
-('tiendat', '12345', b'01', 'Đào', 'Đạt', 'sfdkjs', '0222', NULL, NULL);
+('tuan', '123', b'01', 'Nguyễn', 'M Tuấn', 'Hà Nội', '0258963145', '2002-01-10 09:02:13', NULL),
+('xuyen', '123', b'10', NULL, '', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc cho view `baocaodoanhthu`
+-- Structure for view `baocaodoanhthu`
 --
 DROP TABLE IF EXISTS `baocaodoanhthu`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `baocaodoanhthu`  AS SELECT `hoadonban`.`MaHoaDon` AS `MaHoaDon`, `user`.`Ten` AS `Ten`, `hoadonban`.`NgayLap` AS `NgayLap` FROM (`user` join `hoadonban` on(`hoadonban`.`UserName` = `user`.`UserName`))  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `baocaodoanhthu`  AS SELECT `hoadonban`.`MaHoaDon` AS `MaHoaDon`, `user`.`Ten` AS `Ten`, `hoadonban`.`NgayLap` AS `NgayLap` FROM (`user` join `hoadonban` on(`hoadonban`.`UserName` = `user`.`UserName`)) ;
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc cho view `baocaohoadonnhap`
+-- Structure for view `baocaohoadonnhap`
 --
 DROP TABLE IF EXISTS `baocaohoadonnhap`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `baocaohoadonnhap`  AS SELECT `hoadonnhap`.`MaHoaDonNhap` AS `MaHoaDonNhap`, `hoadonnhap`.`NgayNhapHang` AS `NgayNhapHang`, `user`.`Ho` AS `Ho`, `user`.`Ten` AS `Ten` FROM (`hoadonnhap` join `user` on(`hoadonnhap`.`UserName` = `user`.`UserName`))  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `baocaohoadonnhap`  AS SELECT `hoadonnhap`.`MaHoaDonNhap` AS `MaHoaDonNhap`, `hoadonnhap`.`NgayNhapHang` AS `NgayNhapHang`, `user`.`Ho` AS `Ho`, `user`.`Ten` AS `Ten` FROM (`hoadonnhap` join `user` on(`hoadonnhap`.`UserName` = `user`.`UserName`)) ;
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc cho view `thongtinchitiethoadonban`
+-- Structure for view `thongtinchitiethoadonban`
 --
 DROP TABLE IF EXISTS `thongtinchitiethoadonban`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `thongtinchitiethoadonban`  AS SELECT `hoadonban`.`MaHoaDon` AS `MaHoaDon`, `danhmucsp`.`TenSP` AS `TenSP`, `chitiethoadon`.`SoLuong` AS `SoLuong`, `chitiethoadon`.`TongTienHD` AS `TongTienHD` FROM ((`hoadonban` join `chitiethoadon` on(`chitiethoadon`.`MaHoaDon` = `hoadonban`.`MaHoaDon`)) join `danhmucsp` on(`danhmucsp`.`MaSP` = `chitiethoadon`.`MaChiTietSP`))  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `thongtinchitiethoadonban`  AS SELECT `hoadonban`.`MaHoaDon` AS `MaHoaDon`, `danhmucsp`.`TenSP` AS `TenSP`, `chitiethoadon`.`SoLuong` AS `SoLuong`, `chitiethoadon`.`TongTienHD` AS `TongTienHD` FROM ((`hoadonban` join `chitiethoadon` on(`chitiethoadon`.`MaHoaDon` = `hoadonban`.`MaHoaDon`)) join `danhmucsp` on(`danhmucsp`.`MaSP` = `chitiethoadon`.`MaChiTietSP`)) ;
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc cho view `thongtinhoadonnhap`
+-- Structure for view `thongtinhoadonnhap`
 --
 DROP TABLE IF EXISTS `thongtinhoadonnhap`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `thongtinhoadonnhap`  AS SELECT `hoadonnhap`.`MaHoaDonNhap` AS `MaHoaDonNhap`, `user`.`Ho` AS `Ho`, `user`.`Ten` AS `Ten`, `hoadonnhap`.`NgayNhapHang` AS `NgayNhapHang`, `chitiethoadonnhap`.`TongTien` AS `TongTien` FROM ((`hoadonnhap` join `user` on(`user`.`UserName` = `hoadonnhap`.`UserName`)) join `chitiethoadonnhap` on(`chitiethoadonnhap`.`MaHoaDonNhap` = `hoadonnhap`.`MaHoaDonNhap`))  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `thongtinhoadonnhap`  AS SELECT `hoadonnhap`.`MaHoaDonNhap` AS `MaHoaDonNhap`, `user`.`Ho` AS `Ho`, `user`.`Ten` AS `Ten`, `hoadonnhap`.`NgayNhapHang` AS `NgayNhapHang`, `chitiethoadonnhap`.`TongTien` AS `TongTien` FROM ((`hoadonnhap` join `user` on(`user`.`UserName` = `hoadonnhap`.`UserName`)) join `chitiethoadonnhap` on(`chitiethoadonnhap`.`MaHoaDonNhap` = `hoadonnhap`.`MaHoaDonNhap`)) ;
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `ban`
+-- Indexes for table `ban`
 --
 ALTER TABLE `ban`
   ADD PRIMARY KEY (`MaBan`);
 
 --
--- Chỉ mục cho bảng `chitiethoadon`
+-- Indexes for table `chitiethoadon`
 --
 ALTER TABLE `chitiethoadon`
   ADD PRIMARY KEY (`MaHoaDon`,`MaChiTietSP`),
   ADD KEY `MaChiTietSP` (`MaChiTietSP`);
 
 --
--- Chỉ mục cho bảng `chitiethoadonnhap`
+-- Indexes for table `chitiethoadonnhap`
 --
 ALTER TABLE `chitiethoadonnhap`
   ADD PRIMARY KEY (`MaHoaDonNhap`,`MaNL`),
   ADD KEY `MaNL` (`MaNL`);
 
 --
--- Chỉ mục cho bảng `congthucmon`
+-- Indexes for table `congthucmon`
 --
 ALTER TABLE `congthucmon`
   ADD PRIMARY KEY (`MaSP`,`MaNL`),
   ADD KEY `MaNL` (`MaNL`);
 
 --
--- Chỉ mục cho bảng `danhmucsp`
+-- Indexes for table `danhmucsp`
 --
 ALTER TABLE `danhmucsp`
   ADD PRIMARY KEY (`MaSP`),
   ADD KEY `MaLoai` (`MaLoai`);
 
 --
--- Chỉ mục cho bảng `giamgia`
+-- Indexes for table `giamgia`
 --
 ALTER TABLE `giamgia`
   ADD PRIMARY KEY (`MaGiamGia`);
 
 --
--- Chỉ mục cho bảng `hoadonban`
+-- Indexes for table `hoadonban`
 --
 ALTER TABLE `hoadonban`
   ADD PRIMARY KEY (`MaHoaDon`),
@@ -731,7 +632,7 @@ ALTER TABLE `hoadonban`
   ADD KEY `UserName` (`UserName`);
 
 --
--- Chỉ mục cho bảng `hoadonnhap`
+-- Indexes for table `hoadonnhap`
 --
 ALTER TABLE `hoadonnhap`
   ADD PRIMARY KEY (`MaHoaDonNhap`),
@@ -740,114 +641,114 @@ ALTER TABLE `hoadonnhap`
   ADD KEY `UserName` (`UserName`);
 
 --
--- Chỉ mục cho bảng `loaisp`
+-- Indexes for table `loaisp`
 --
 ALTER TABLE `loaisp`
   ADD PRIMARY KEY (`LoaiSP`);
 
 --
--- Chỉ mục cho bảng `nguyenlieu`
+-- Indexes for table `nguyenlieu`
 --
 ALTER TABLE `nguyenlieu`
   ADD PRIMARY KEY (`MaNL`);
 
 --
--- Chỉ mục cho bảng `nhacungcap`
+-- Indexes for table `nhacungcap`
 --
 ALTER TABLE `nhacungcap`
   ADD PRIMARY KEY (`MaNCC`);
 
 --
--- Chỉ mục cho bảng `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`UserName`,`LoaiUser`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `ban`
+-- AUTO_INCREMENT for table `ban`
 --
 ALTER TABLE `ban`
   MODIFY `MaBan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT cho bảng `danhmucsp`
+-- AUTO_INCREMENT for table `danhmucsp`
 --
 ALTER TABLE `danhmucsp`
-  MODIFY `MaSP` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `MaSP` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
--- AUTO_INCREMENT cho bảng `giamgia`
+-- AUTO_INCREMENT for table `giamgia`
 --
 ALTER TABLE `giamgia`
   MODIFY `MaGiamGia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14589;
 
 --
--- AUTO_INCREMENT cho bảng `hoadonban`
+-- AUTO_INCREMENT for table `hoadonban`
 --
 ALTER TABLE `hoadonban`
-  MODIFY `MaHoaDon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
+  MODIFY `MaHoaDon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
--- AUTO_INCREMENT cho bảng `hoadonnhap`
+-- AUTO_INCREMENT for table `hoadonnhap`
 --
 ALTER TABLE `hoadonnhap`
-  MODIFY `MaHoaDonNhap` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `MaHoaDonNhap` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
--- AUTO_INCREMENT cho bảng `loaisp`
+-- AUTO_INCREMENT for table `loaisp`
 --
 ALTER TABLE `loaisp`
-  MODIFY `LoaiSP` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `LoaiSP` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT cho bảng `nguyenlieu`
+-- AUTO_INCREMENT for table `nguyenlieu`
 --
 ALTER TABLE `nguyenlieu`
-  MODIFY `MaNL` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `MaNL` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT cho bảng `nhacungcap`
+-- AUTO_INCREMENT for table `nhacungcap`
 --
 ALTER TABLE `nhacungcap`
-  MODIFY `MaNCC` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `MaNCC` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- Các ràng buộc cho các bảng đã đổ
+-- Constraints for dumped tables
 --
 
 --
--- Các ràng buộc cho bảng `chitiethoadon`
+-- Constraints for table `chitiethoadon`
 --
 ALTER TABLE `chitiethoadon`
   ADD CONSTRAINT `chitiethoadon_ibfk_2` FOREIGN KEY (`MaChiTietSP`) REFERENCES `danhmucsp` (`MaSP`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `chitiethoadon_ibfk_3` FOREIGN KEY (`MaHoaDon`) REFERENCES `hoadonban` (`MaHoaDon`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Các ràng buộc cho bảng `chitiethoadonnhap`
+-- Constraints for table `chitiethoadonnhap`
 --
 ALTER TABLE `chitiethoadonnhap`
   ADD CONSTRAINT `chitiethoadonnhap_ibfk_1` FOREIGN KEY (`MaNL`) REFERENCES `nguyenlieu` (`MaNL`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `chitiethoadonnhap_ibfk_2` FOREIGN KEY (`MaHoaDonNhap`) REFERENCES `hoadonnhap` (`MaHoaDonNhap`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Các ràng buộc cho bảng `congthucmon`
+-- Constraints for table `congthucmon`
 --
 ALTER TABLE `congthucmon`
   ADD CONSTRAINT `congthucmon_ibfk_1` FOREIGN KEY (`MaNL`) REFERENCES `nguyenlieu` (`MaNL`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `congthucmon_ibfk_2` FOREIGN KEY (`MaSP`) REFERENCES `danhmucsp` (`MaSP`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Các ràng buộc cho bảng `danhmucsp`
+-- Constraints for table `danhmucsp`
 --
 ALTER TABLE `danhmucsp`
   ADD CONSTRAINT `danhmucsp_ibfk_1` FOREIGN KEY (`MaLoai`) REFERENCES `loaisp` (`LoaiSP`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Các ràng buộc cho bảng `hoadonban`
+-- Constraints for table `hoadonban`
 --
 ALTER TABLE `hoadonban`
   ADD CONSTRAINT `hoadonban_ibfk_3` FOREIGN KEY (`MaBan`) REFERENCES `ban` (`MaBan`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -855,7 +756,7 @@ ALTER TABLE `hoadonban`
   ADD CONSTRAINT `hoadonban_ibfk_5` FOREIGN KEY (`UserName`) REFERENCES `user` (`UserName`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Các ràng buộc cho bảng `hoadonnhap`
+-- Constraints for table `hoadonnhap`
 --
 ALTER TABLE `hoadonnhap`
   ADD CONSTRAINT `hoadonnhap_ibfk_1` FOREIGN KEY (`MaNCC`) REFERENCES `nhacungcap` (`MaNCC`) ON DELETE CASCADE ON UPDATE CASCADE,
