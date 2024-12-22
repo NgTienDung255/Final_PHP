@@ -83,7 +83,7 @@
 </div>-->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
-    emailjs.init("QiQCxZi935Qv7oKxs"); // Thay YOUR_EMAILJS_USER_ID bằng ID từ EmailJS
+    emailjs.init("QiQCxZi935Qv7oKxs"); 
 
     document.getElementById('bookingForm').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -100,17 +100,20 @@
             return;
         }
 
-        // Gửi email thông qua EmailJS
-        emailjs.send("service_phpbtl","template_oue5m8u", {
-            name: name,
-            email: email,
-            datetime: datetime,
-            guests: guests,
-            message: message
-        }).then(function(response) {
-            alert('Đặt bàn thành công! Chúng tôi sẽ liên hệ lại với bạn sớm nhất.');
-        }, function(error) {
-            alert('Có lỗi xảy ra khi gửi thông tin. Vui lòng thử lại.');
-        });
+        // Hiển thị hộp thoại xác nhận
+        if (confirm('Bạn có chắc chắn muốn đặt bàn với thông tin này không?')) {
+            // Gửi email thông qua EmailJS
+            emailjs.send("service_phpbtl","template_oue5m8u", {
+                name: name,
+                email: email,
+                datetime: datetime,
+                guests: guests,
+                message: message
+            }).then(function(response) {
+                alert('Đặt bàn thành công! Chúng tôi sẽ liên hệ lại với bạn sớm nhất.');
+            }, function(error) {
+                alert('Có lỗi xảy ra khi gửi thông tin. Vui lòng thử lại.');
+            });
+        }
     });
 </script>
